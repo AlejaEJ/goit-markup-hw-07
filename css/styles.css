@@ -325,14 +325,11 @@ a {
 .backdrop .modal-form .modal-form_checkoption {
     display: block;
     position: relative;
-    padding-left: 25px;
+    padding-left: 20px;
     margin-top: 20px;
 }
 
 .backdrop .modal-form .modal-form_checkoption .modal-form_checkbox {
-    /* width: 1px;
-    height: 1px; */
-    margin: -8px;
     opacity: 0;
 }
 

@@ -1,47 +1,46 @@
 :root {
-    --primary-black-color: #212121;
-    --primary-text-color: #757575;
-    --primary-white-color: #ffffff;
-    --border-color: #ececec;
-
     --accent-color: #2196f3;
     --background-black: #2f303a;
     --background-gray: #f5f4fa;
-    --button-primary-hover: #188ce8;
-    --text-white-opacity: #ffffff99;
+    --border-color: #ececec;
     --bordercards-color: #eeeeee;
+    --button-primary-hover: #188ce8;
     --icon-color: #afb1b8;
+    --primary-black-color: #212121;
+    --primary-text-color: #757575;
+    --primary-white-color: #ffffff;
+    --text-white-opacity: #ffffff99;
 
     --container-padding: calc((100% - 1200px) / 2);
 }
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
+    font-weight: 400;
     letter-spacing: 0.03em;
+    line-height: 1.7;
 }
 
 .button-primary {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
-    font-weight: 700;
     font-size: 16px;
-    line-height: 1.9;
+    font-weight: 700;
     letter-spacing: 0.06em;
-    cursor: pointer;
-
+    line-height: 1.9;
+    
     border-radius: 4px;
     border: none;
+    cursor: pointer;
     outline: none;
     padding: 10px 32px;
 }
@@ -52,18 +51,9 @@ body {
 }
 
 .container {
-    padding: 0 15px;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.logo {
-    color: var(--accent-color);
-    font-family: "Raleway", sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.2;
-    text-decoration: none; 
+    padding: 0 15px;
 }
 
 .section {
@@ -72,8 +62,8 @@ body {
 
 .section > h2 {
     color: var(--primary-black-color);
-    font-weight: 700;
     font-size: 36px;
+    font-weight: 700;
     line-height: 1.2;
 
     padding: 30px 0 55px;
@@ -88,29 +78,22 @@ a {
     text-decoration: none; 
 }
 
-/* Header section */
-.page-header {
+/*--------------- Header section ---------------*/
+.header {
+    border-bottom: 1px solid var(--border-color);
     height: 80px;
     padding: 0 var(--container-padding);
     margin: 0 auto;
-    border-bottom: 1px solid var(--border-color);
 }
 
-.page-header .container {
-    display: flex;
-    justify-content: space-between;
+.header .container {
     align-items: center;
-
+    display: flex;
     height: 100%;
+    justify-content: space-between;
 }
 
-.page-header .container nav {
-    display: flex;
-    align-items: center;
-    gap: 100px;
-}
-
-.page-header .container nav .logo {
+.logo {
     color: var(--accent-color);
     font-family: "Raleway", sans-serif;
     font-size: 26px;
@@ -119,13 +102,21 @@ a {
     text-decoration: none;
 }
 
-.page-header .container nav .nav-menu-list {
+.navbar {
+    align-items: center;
+    display: flex;
+    gap: 100px;
+}
+
+.navbar .navbar__list {
     display: flex;
     list-style: none;
     gap: 80px;
 }
 
-.page-header .container nav .nav-menu-list .page {
+.navbar .navbar__link {
+    position: relative;
+
     color: var(--primary-black-color);
     font-weight: 500;
     font-size: 14px;
@@ -134,78 +125,71 @@ a {
     text-decoration: none;
 }
 
-.page-header .container .contacts-menu-list {
+.navbar .navbar__link--current::after {
+    content: '';
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 44px;
+    width: 100%;
+
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.contacts {
     display:flex;
     list-style: none;
     gap: 80px;
 }
 
-.page-header .container .contacts-menu-list li .item {
-    display:flex;
+.contacts .contacts__link {
     align-items: center;
+    display:flex;
     gap: 10px;
 
     color: var(--primary-text-color);
-    font-weight: 500;
     font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+    font-weight: 500;
     height: 20px;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+    text-decoration: none;
 }
 
-.page-header .container .contacts-menu-list li .item .email-logo {
-    width: 16px;
+.contacts .contacts__icon {
+    fill: var(--primary-text-color);
+}
+
+.contacts .contacts__icon--email {
     height: 12px;
-    fill: var(--primary-text-color);
+    width: 16px;
 }
 
-.page-header .container .contacts-menu-list li .item .phone-logo {
-    width: 10px;
+.contacts .contacts__icon--phone {
     height: 16px;
-    fill: var(--primary-text-color);
+    width: 10px;
 }
 
-.page-header .container nav .nav-menu-list .page:hover,
-.page-header .container nav .nav-menu-list .page:focus,
-.page-header .container .contacts-menu-list li .item:hover,
-.page-header .container .contacts-menu-list li .item:focus {
+.navbar .navbar__link--current,
+.navbar .navbar__link:hover,
+.navbar .navbar__link:focus,
+.contacts .contacts__link:hover,
+.contacts .contacts__link:focus,
+.contacts .contacts__link:hover .contacts__icon,
+.contacts .contacts__link:focus .contacts__icon {
     color: var(--accent-color);
-}
-
-.page-header .container nav .nav-menu-list .page {
-    position: relative;
-}
-
-.page-header .container nav .nav-menu-list .page.current {
-    color: var(--accent-color);
-}
-
-.page-header .container nav .nav-menu-list .page.current::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 44px;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-}
-
-.page-header .container .contacts-menu-list li .item:hover .email-logo,
-.page-header .container .contacts-menu-list li .item:focus .email-logo,
-.page-header .container .contacts-menu-list li .item:hover .phone-logo,
-.page-header .container .contacts-menu-list li .item:focus .phone-logo {
     fill: var(--accent-color);
 }
 
-/* Modal window */
+/*--------------- Modal window ---------------*/
 .backdrop {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    
     height: 100%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;

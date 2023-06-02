@@ -325,14 +325,14 @@ a {
 .backdrop .modal-form .modal-form_checkoption {
     display: block;
     position: relative;
-    padding-left: 42px;
+    padding-left: 25px;
     margin-top: 20px;
 }
 
 .backdrop .modal-form .modal-form_checkoption .modal-form_checkbox {
-    width: 1px;
-    height: 1px;
-    margin: -2px;
+    /* width: 1px;
+    height: 1px; */
+    margin: -8px;
     opacity: 0;
 }
 
@@ -782,6 +782,7 @@ footer .container form .footer-form_label .footer-form_input {
     background-color: var(--background-black);
     padding-left: 16px;
     outline: none;
+    color: var(--primary-white-color);
 }
 
 footer .container form .footer-form_label .footer-form_button {

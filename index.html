@@ -74,6 +74,51 @@
               <use href="./Images/icons.svg#icon-close"></use>
             </svg>
           </button>
+          <h3 class="modal-form_title">Deje sus datos, nos contactaremos con usted</h3>
+          <label class="modal-form_label" for="name">
+            Nombre
+            <input class="modal-form_input" type="text" name="name" id="name"/>
+            <svg class="modal-form_icon">
+              <use href="./Images/icons.svg#icon-user"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form_label" for="telephone">
+            Teléfono
+            <input class="modal-form_input" type="tel" name="telephone" id="telephone"/>
+            <svg class="modal-form_icon">
+              <use href="./Images/icons.svg#icon-telephone"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form_label" for="email">
+            E-mail
+            <input class="modal-form_input" type="email" name="email" id="email"/>
+            <svg class="modal-form_icon">
+              <use href="./Images/icons.svg#icon-email2"></use>
+            </svg>
+          </label>
+
+          <label for="comments">
+            Comentarios
+            <textarea class="modal-form_comments" name="comments" id="comments"
+            placeholder="Introduzca el texto">
+            </textarea>
+          </label>
+
+          <label class="modal-form_checkoption" for="policy">
+            <input class="modal-form_checkbox" type="checkbox" name="policy" id="policy" />
+            <span class="modal-form_box">
+              <svg class="modal-form_iconcheck">
+                <use href="./Images/icons.svg#icon-checkmark"></use>
+              </svg>
+            </span>
+           Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</div> 
+          </label>
+
+          <button class="button-primary modal-form_button" type="submit">
+            Enviar
+          </button>
         </form>
       </section>
       <!--Hero Section-->
@@ -390,34 +435,37 @@
 
     <!--Footer section-->
     <footer>
-        <a class="logo" href="">WebStudio</a>
-        <div class="container">
-        <address>
-          <ul>
-            <li>
-              <a
-                class="contact"
-                href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+50,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+México,+CDMX,+México"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
-              >
-            </li>
+      <div class="container">
+        <ul>
+          <li>
+            <a class="logo" href="">WebStudio</a>
+            <address>
+              <ul>
+                <li>
+                  <a
+                    class="contact"
+                    href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+50,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+México,+CDMX,+México"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+                  >
+                </li>
 
-            <li>
-              <a class="contact-channel" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
+                <li>
+                  <a class="contact-channel" href="mailto:info@example.com"
+                    >info@example.com
+                  </a>
+                </li>
 
-            <li>
-              <a class="contact-channel" href="tel:+525555296000"
-                >+52 55 5529 6000</a
-              >
-            </li>
-          </ul>
-        </address>
-
+                <li>
+                  <a class="contact-channel" href="tel:+525555296000"
+                    >+52 55 5529 6000
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </li>
+        </ul> 
         <aside>
           <p>ENCUENTRENOS EN</p>
           <ul>
@@ -454,6 +502,20 @@
             </li>
           </ul>
         </aside>
+
+        <form>
+          <p>SUSCRÍBASE AL BOLETÍN INFORMATICO</p>
+          <label class="footer-form_label">
+            <input class="footer-form_input" type="email" name="email" id="email" 
+            placeholder="Correo electrónico"/> 
+            <button class="button-primary footer-form_button" type="submit">
+              Suscribase
+              <svg class="footer-form_icon">
+                <use href="./Images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </label>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>

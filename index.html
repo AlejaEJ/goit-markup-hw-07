@@ -68,119 +68,119 @@
     <main>
       <!--------------- Modal Window --------------->
       <section class="backdrop is-hidden" data-backdrop>
-        <form class="modal-form is-hidden" data-modal>
-          <button class="modal-button" type="button" data-modal-close>
-            <svg class="icon-close">
+        <form class="modal__form is-hidden" data-modal>
+          <button class="modal__button" type="button" data-modal-close>
+            <svg class="modal__button--close">
               <use href="./Images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <h3 class="modal-form_title">Deje sus datos, nos contactaremos con usted</h3>
-          <label class="modal-form_label" for="name">
+          <h3 class="modal__title">Deje sus datos, nos contactaremos con usted</h3>
+          <label class="modal__label" for="name">
             Nombre
-            <input class="modal-form_input" type="text" name="name" id="name"/>
-            <svg class="modal-form_icon">
+            <input class="modal__input" type="text" name="name" id="name"/>
+            <svg class="modal__icon">
               <use href="./Images/icons.svg#icon-user"></use>
             </svg>
           </label>
 
-          <label class="modal-form_label" for="telephone">
+          <label class="modal__label" for="telephone">
             Teléfono
-            <input class="modal-form_input" type="tel" name="telephone" id="telephone"/>
-            <svg class="modal-form_icon">
+            <input class="modal__input" type="tel" name="telephone" id="telephone"/>
+            <svg class="modal__icon">
               <use href="./Images/icons.svg#icon-telephone"></use>
             </svg>
           </label>
 
-          <label class="modal-form_label" for="email">
+          <label class="modal__label" for="email">
             E-mail
-            <input class="modal-form_input" type="email" name="email" id="email"/>
-            <svg class="modal-form_icon">
+            <input class="modal__input" type="email" name="email" id="email"/>
+            <svg class="modal__icon">
               <use href="./Images/icons.svg#icon-email2"></use>
             </svg>
           </label>
 
           <label for="comments">
             Comentarios
-            <textarea class="modal-form_comments" name="comments" id="comments"
+            <textarea class="modal__comments" name="comments" id="comments"
             placeholder="Introduzca el texto">
             </textarea>
           </label>
 
-          <label class="modal-form_checkoption" for="policy">
-            <input class="modal-form_checkbox" type="checkbox" name="policy" id="policy" required />
-            <span class="modal-form_box">
-              <svg class="modal-form_iconcheck">
+          <label class="modal__label--checkoption" for="policy">
+            <input class="modal__input--checkbox" type="checkbox" name="policy" id="policy" required />
+            <span class="modal__box">
+              <svg class="modal__iconcheck">
                 <use href="./Images/icons.svg#icon-checkmark"></use>
               </svg>
             </span>
            Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</div> 
           </label>
 
-          <button class="button-primary modal-form_button" type="submit">
+          <button class="hero__button modal__button--submit" type="submit">
             Enviar
           </button>
         </form>
       </section>
-      <!--Hero Section-->
-      <section class="hero-section">
-        <h1 class="hero-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button class="button-primary" type="button" data-modal-open>
+      <!--------------- Hero Section --------------->
+      <section class="hero">
+        <h1 class="hero__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+        <button class="hero__button" type="button" data-modal-open>
           Solicite nuestro servicio
         </button>
       </section>
 
-      <!-- Benefits section-->
-      <section class="section benefits-section">
+      <!--------------- Benefits section --------------->
+      <section class="section">
         <div class="container">
-          <ul class="benefits list">
-            <li>
-              <div>
-                <svg class="icon-benefit">
+          <ul class="benefits">
+            <li class="benefits__list">
+              <div class="benefits__item">
+                <svg class="benefits__icon">
                   <use href="./Images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="title">ATENCIÓN A LOS DETALLES</h3>
-              <p class="description">
+              <h3 class="benefits__title">ATENCIÓN A LOS DETALLES</h3>
+              <p>
                 Nos adentramos en todos los detalles y procesos de su negocio,
                 para así desarrollar una solución a su medida.
               </p>
             </li>
 
-            <li>
-              <div>
-                <svg class="icon-benefit">
+            <li class="benefits__list">
+              <div class="benefits__item">
+                <svg class="benefits__icon">
                   <use href="./Images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="title">PUNTUALIDAD</h3>
-              <p class="description">
+              <h3 class="benefits__title">PUNTUALIDAD</h3>
+              <p>
                 Con nosotros, usted puede sentirse seguro y protegido. Un
                 principio importante de la empresa: respetar su tiempo y
                 respetar los plazos acordados.
               </p>
             </li>
 
-            <li>
-              <div>
-                <svg class="icon-benefit">
+            <li class="benefits__list">
+              <div class="benefits__item">
+                <svg class="benefits__icon">
                   <use href="./Images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="title">PLANIFICACIÓN</h3>
-              <p class="description">
+              <h3 class="benefits__title">PLANIFICACIÓN</h3>
+              <p>
                 Usted podrá observar y participar en cada fase del desarrollo y
                 aplicación de soluciones.
               </p>
             </li>
 
-            <li>
-              <div>
-                <svg class="icon-benefit">
+            <li class="benefits__list">
+              <div class="benefits__item">
+                <svg class="benefits__icon">
                   <use href="./Images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="title">TECNOLOGÍA MODERNA</h3>
-              <p class="description">
+              <h3 class="benefits__title">TECNOLOGÍA MODERNA</h3>
+              <p>
                 Usamos herramientas innovadoras para resolver las tareas
                 asignadas. Es hora de simplificar los procesos laborales.
               </p>
@@ -189,11 +189,11 @@
         </div>
       </section>
 
-      <!--What we do section-->
-      <section class="section no-top-pading what-we-do-section">
+      <!--------------- What we do section --------------->
+      <section class="section section__item">
         <h2>A qué nos dedicamos</h2>
         <div class="container">
-          <ul>
+          <ul class="section">
             <li>
               <img src="./Images/image1.jpg" alt="iPad with keyboard over a wood table" width="373"/>
               <p>APLICACIONES DE ESCRITORIO</p>
@@ -508,7 +508,7 @@
           <label class="footer-form_label">
             <input class="footer-form_input" type="email" name="email" id="email" 
             placeholder="Correo electrónico"/> 
-            <button class="button-primary footer-form_button" type="submit">
+            <button class="hero__button footer-form_button" type="submit">
               Suscribase
               <svg class="footer-form_icon">
                 <use href="./Images/icons.svg#icon-send"></use>

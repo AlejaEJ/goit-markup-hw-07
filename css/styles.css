@@ -673,59 +673,58 @@ a {
 }
 
 /* Footer section */
-footer {
-    background-color: var(--background-black);
+.footer {
     padding: 60px var(--container-padding);
+
+    background-color: var(--background-black);
 }
 
-
-footer .container {
-    display: flex;
-    justify-content: flex-start;
+.footer .container {
     align-items: flex-start;
+    display: flex;
     gap: 20px;
 }
 
-footer .container ul {
+.footer .container ul {
     list-style: none;
 }
 
-footer .container address {
+.footer .container address {
     display: flex;
     width: 230;
     
 }
 
-footer .container address ul {
+.footer .container address ul {
     list-style: none;
 }
 
-footer .container address .contact {
+.footer .container address .contact {
     display: flex;
     font-style: normal;
     color: var(--primary-white-color);
 }
 
-footer .container address .contact-channel {
+.footer .container address .contact-channel {
     font-style: normal;
     color: var(--text-white-opacity);
     text-decoration: none;
 }
 
-footer .container address .contact:hover,
-footer .container address .contact:focus,
-footer .container address .contact-channel:hover,
-footer .container address .contact-channel:focus {
+.footer .container address .contact:hover,
+.footer .container address .contact:focus,
+.footer .container address .contact-channel:hover,
+.footer .container address .contact-channel:focus {
     color: var(--accent-color);
 }
 
-footer .container aside p {
+.footer .container aside p {
     font-weight: 700;
     line-height: 1.1;
     color: var(--primary-white-color);
 }
 
-footer .container aside ul {
+.footer .container aside ul {
     padding-top: 20px;
     display: flex; 
     align-items: center;
@@ -733,7 +732,7 @@ footer .container aside ul {
     gap: 15px;
 }
 
-footer .container aside ul li {
+.footer .container aside ul li {
     display:block;
     width: 44px;
     height: 44px;
@@ -741,7 +740,7 @@ footer .container aside ul li {
     box-shadow: none;
 }
 
-footer .container aside ul li a {
+.footer .container aside ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -751,30 +750,30 @@ footer .container aside ul li a {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-footer .container aside ul li a .icon {
+.footer .container aside ul li a .icon {
     width: 20px;
     height: 20px;
     fill: var(--primary-white-color);
     
 }
 
-footer .container aside ul li:hover a,
-footer .container aside ul li a:focus {
+.footer .container aside ul li:hover a,
+.footer .container aside ul li a:focus {
     background-color: var(--accent-color);
 }
 
-footer .container p {
+.footer .container p {
     color: var(--primary-white-color);
     font-weight: 700;
     line-height: 1.1;
 }
 
-footer .container form .footer-form_label {
+.footer .container form .footer-form_label {
     display: block;
     padding-top: 20px;
 }
 
-footer .container form .footer-form_label .footer-form_input {
+.footer .container form .footer-form_label .footer-form_input {
     width: 358px;
     height: 50px;
     border-radius: 4px;

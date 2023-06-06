@@ -70,13 +70,14 @@ body {
 }
 
 h2 {
+    padding: 30px 0 55px;
+    text-align: center;
+
     color: var(--primary-black-color);
     font-size: 36px;
     font-weight: 700;
     line-height: 1.2;
 
-    padding: 30px 0 55px;
-    text-align: center;
 }
 
 a {
@@ -85,11 +86,11 @@ a {
 
 /*--------------- Header section ---------------*/
 .header {
-    border-bottom: 1px solid var(--border-color);
-    height: 80px;
-    
     margin: 0 auto;
     padding: 0 var(--container-padding);
+
+    border-bottom: 1px solid var(--border-color);
+    height: 80px;
 }
 
 .header .container {
@@ -125,15 +126,15 @@ a {
 }
 
 .navbar .navbar__link--current::after {
+    left: 0;
+    position: absolute;
+    top: 44px;
+
     background-color: var(--accent-color);
     border-radius: 2px;
     content: '';
     height: 4px;
-    width: 100%;
-    
-    left: 0;
-    position: absolute;
-    top: 44px;
+    width: 100%;  
 }
 
 .contacts {
@@ -206,6 +207,10 @@ a {
 }
 
 .backdrop .modal__form {
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+
     border-radius: 4px;
     background-color: var(--primary-white-color);
     height: 581px;
@@ -215,9 +220,6 @@ a {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0);
     
-    padding: 40px;
-    position: relative;
-    z-index: 1;
 }
 
 .backdrop .modal__form.is-hidden {
@@ -252,11 +254,12 @@ a {
 }
 
 .backdrop .modal__title {
+    text-align: center;
+
     color: var(--primary-black-color);
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
-    text-align: center;
 }
 
 .backdrop .modal__label {
@@ -287,14 +290,14 @@ a {
 }
 
 .backdrop .modal__icon {
-    height: 18px;
-    width: 18px;
-    fill: var(--primary-black-color);
-    
     bottom: 14px;
     left: 15px;
     position: absolute;
     top: 35px;
+
+    height: 18px;
+    width: 18px;
+    fill: var(--primary-black-color);
 }
 
 .backdrop .modal__comments {
@@ -387,26 +390,28 @@ a {
 }
 
 .benefits .benefits__item {
+    padding: 25px 100px;
+
     background-color: var(--background-gray);
     border-radius: 4px;
-    
-    padding: 25px 100px;
 }
 
 .benefits .benefits__icon {
     height: 70px;
     width: 65px;
 } 
-.benefits .benefits__title {
-    color: var(--primary-black-color);
 
+.benefits .benefits__title {
     padding: 10px 0;
+
+    color: var(--primary-black-color);
 }
 
 /*--------------- What we do section ---------------*/
 .activities__section {
     padding-top: 0;
 }
+
 .activities__section .activities__list {
     align-items: center;
     display: flex;
@@ -430,16 +435,16 @@ a {
 
 .activities__section .activities__item > .activities__title {
     bottom: 0;
+    margin: 0;
     padding: 27px 0;
     position: absolute;
-    margin: 0;
+    text-align: center;
     
     background-color: rgba(47, 48, 58, 0.8);
     color: var(--primary-white-color);
     font-size: 14px;
     font-weight: 700;
     height: 70px;
-    text-align: center;
     width: 373px;
 }
 
@@ -456,11 +461,12 @@ a {
 }
 
 .team__section .team__list {
+    text-align: center;
+
     background-color: var(--primary-white-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     list-style: none;
-    text-align: center;
 }
 
 .team__section .team__member {
@@ -481,8 +487,8 @@ a {
     display: flex; 
     gap: 15px;
     justify-content:center;
-    padding: 10px 20px;
     margin-bottom: 20px;
+    padding: 10px 20px;
 }
 
 .team__section .socialMedia__list {
@@ -548,9 +554,9 @@ a {
 }
 
 .clients .clients__icon {
-    width: 106px;
-    height: 52px;
     fill: var(--icon-color);
+    height: 52px;
+    width: 106px;
 }
 
 .clients .clients__list:hover .clients__link,
@@ -563,7 +569,7 @@ a {
     fill: var(--accent-color);
 }
 
-/* Portfolio section */
+/*--------------- Portfolio section ---------------*/
 .portfolio__menu {
     align-items: center;
     display: flex;
@@ -591,75 +597,79 @@ a {
 .portfolio__menu .portfolio__button:hover,
 .portfolio__menu .portfolio__button:focus {
     background-color: var(--accent-color);
-    color: var(--primary-white-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--primary-white-color);
 }
 
-.portfolio-section .cards {
-    justify-content: space-between;
-    flex-wrap: wrap;
+.portfolio__cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
     list-style: none;
 }
 
-.portfolio-section .cards li {
+.portfolio__cards .portfolio__list {
     margin-bottom: 20px;
-    width: 370px;
+    
     border: 1px solid var(--bordercards-color); 
+    width: 370px;
 }
 
-.portfolio-section .cards li:hover {
+.portfolio__cards .portfolio__list:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-section .cards li a h2 {
-    color: var(--primary-black-color);
+.portfolio__cards .portfolio__title {
+    padding: 4px 24px;
+    text-align: left;
+
     background-color: var(--primary-white-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
-
-    padding: 4px 24px;
 }
 
-.portfolio-section .cards li a p {
-    color: var(--primary-text-color);
+.portfolio__cards .portfolio_description {
+    padding: 4px 24px;
+    
     background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
-
-    padding: 4px 24px;
 }
 
-.portfolio-section .cards li a .frame {
+.portfolio__cards  .portfolio__frame {
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-section .cards li a .frame .overlay {
+.portfolio__cards .portfolio__image {
+    display: block;
+    
+    height: auto;
+    max-width: 100%;
+}
+
+.portfolio__cards .portfolio__overlay {
+    left: 0;
+    padding:  63px 24px;
     position: absolute;
     top: 0;
-    left: 0;
+    
     color: var(--primary-white-color);
     background-color: rgba(33, 150, 243, 0.9);
-    width: 100%;
     height: 100%;
+    width: 100%;
 
-    padding:  63px 24px;
-    transform: translateY(100%);
     transition: transform ease-in 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(101%);
 }
 
-.portfolio-section .cards li:hover a .frame .overlay {
+.portfolio__cards .portfolio__list:hover .portfolio__overlay {
     transform: translateY(0);
-}
-
-.portfolio-section .cards li a img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 /* Footer section */

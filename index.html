@@ -436,14 +436,14 @@
     <!--------------- Footer section --------------->
     <footer class="footer">
       <div class="container">
-        <ul>
+        <ul class="address">
           <li>
             <a class="logo" href="">WebStudio</a>
             <address>
-              <ul>
+              <ul class="address">
                 <li>
                   <a
-                    class="contact"
+                    class="address__link"
                     href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+50,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+México,+CDMX,+México"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -452,13 +452,13 @@
                 </li>
 
                 <li>
-                  <a class="contact-channel" href="mailto:info@example.com"
+                  <a class="address__link address__link--color" href="mailto:info@example.com"
                     >info@example.com
                   </a>
                 </li>
 
                 <li>
-                  <a class="contact-channel" href="tel:+525555296000"
+                  <a class="address__link address__link--color" href="tel:+525555296000"
                     >+52 55 5529 6000
                   </a>
                 </li>
@@ -467,35 +467,35 @@
           </li>
         </ul> 
         <aside>
-          <p>ENCUENTRENOS EN</p>
-          <ul>
-            <li>
-              <a href="#">
-                <svg class="icon">
+          <p class="footer__text">ENCUENTRENOS EN</p>
+          <ul class="socialMedia">
+            <li class="socialMedia__list">
+              <a class="socialMedia__link socialMedia__link--color" href="#">
+                <svg class="socialMedia__icon socialMedia__icon--color">
                   <use href="./Images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
 
-            <li>
-              <a href="#">
-                <svg class="icon">
+            <li class="socialMedia__list">
+              <a class="socialMedia__link socialMedia__link--color" href="#">
+                <svg class="socialMedia__icon socialMedia__icon--color">
                   <use href="./Images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
 
-            <li>
-              <a href="#">
-                <svg class="icon">
+            <li class="socialMedia__list">
+              <a class="socialMedia__link socialMedia__link--color" href="#">
+                <svg class="socialMedia__icon socialMedia__icon--color">
                   <use href="./Images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
 
-            <li>
-              <a href="#">
-                <svg class="icon">
+            <li class="socialMedia__list">
+              <a class="socialMedia__link socialMedia__link--color" href="#">
+                <svg class="socialMedia__icon socialMedia__icon--color">
                   <use href="./Images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -504,13 +504,13 @@
         </aside>
 
         <form>
-          <p>SUSCRÍBASE AL BOLETÍN INFORMATICO</p>
-          <label class="footer-form_label">
-            <input class="footer-form_input" type="email" name="email" id="email" 
+          <p class="footer__text">SUSCRÍBASE AL BOLETÍN INFORMATICO</p>
+          <label class="footer__form--label">
+            <input class="footer__form--input" type="email" name="email" id="email" 
             placeholder="Correo electrónico"/> 
-            <button class="hero__button footer-form_button" type="submit">
+            <button class="hero__button footer__form--button" type="submit">
               Suscribase
-              <svg class="footer-form_icon">
+              <svg class="footer__form--icon">
                 <use href="./Images/icons.svg#icon-send"></use>
               </svg>
             </button>

@@ -30,6 +30,15 @@ body {
     line-height: 1.7;
 }
 
+.logo {
+    color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
 .hero__button {
     padding: 10px 32px;
 
@@ -89,15 +98,6 @@ a {
     justify-content: space-between;
     
     height: 100%;
-}
-
-.logo {
-    color: var(--accent-color);
-    font-family: "Raleway", sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.2;
-    text-decoration: none;
 }
 
 .navbar {
@@ -404,164 +404,167 @@ a {
 }
 
 /*--------------- What we do section ---------------*/
-.section__item {
+.activities__section {
     padding-top: 0;
 }
-.what-we-do-section .container ul {
-    display: flex;
+.activities__section .activities__list {
     align-items: center;
-    justify-content: space-between;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.what-we-do-section .container ul li {
+.activities__section .activities__item {
     position: relative;
+    z-index: -1;
+    
     list-style: none;
     overflow: hidden;
-    z-index: -1;
 }
 
-.what-we-do-section .container ul li img {
+.activities__section .activities__image {
     display: block;
+
     max-width: 100%;
-    height: auto;
 }
 
-.what-we-do-section .container li > p {
-    font-weight: 700;
-    font-size: 14px;
-    background-color: rgba(47, 48, 58, 0.8);
-    width: 373px;
-    height: 70px;
-    color: var(--primary-white-color);
-    text-align: center;
+.activities__section .activities__item > .activities__title {
+    bottom: 0;
     padding: 27px 0;
     position: absolute;
-    bottom: 0;
     margin: 0;
+    
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--primary-white-color);
+    font-size: 14px;
+    font-weight: 700;
+    height: 70px;
+    text-align: center;
+    width: 373px;
 }
 
-/* Team section */
-.team-section {
+/*--------------- Team section ---------------*/
+.team__section {
     background-color: var(--background-gray); 
 }
 
-.team-section .container .team-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.team__section .team__cards {
     align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.team-section .container .team-cards li {
+.team__section .team__list {
     background-color: var(--primary-white-color);
-    text-align: center;
-    list-style: none;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    text-align: center;
 }
 
-.team-section .container .team-cards li h3 {
-    color: var(--primary-black-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-
+.team__section .team__member {
     margin: 30px 0 10px 0;
+    
+    color: var(--primary-black-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
-.team-section .container .team-cards li p {
+.team__section .team__role {
     margin-bottom: 30px;
 }
 
-.team-section .container .team-cards li ul {
-    display: flex; 
+.team__section .socialMedia {
     align-items: center;
-    justify-content:center;
+    display: flex; 
     gap: 15px;
+    justify-content:center;
     padding: 10px 20px;
     margin-bottom: 20px;
 }
 
-.team-section .container .team-cards li ul li {
+.team__section .socialMedia__list {
     display:block;
-    width: 44px;
-    height: 44px;
+    
     border-radius: 25px;
     box-shadow: none;
-}
-
-.team-section .container .team-cards li ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
     height: 44px;
+    width: 44px;
+}
+
+.team__section .socialMedia__link {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
     border-radius: 25px;
+    height: 44px;
+    width: 44px;
 }
 
-.team-section .container .team-cards li ul li a .icon {
-    width: 20px;
-    height: 20px;
+.team__section .socialMedia__icon {
     fill: var(--icon-color);
+    height: 20px;
+    width: 20px;
 }
 
-.team-section .container .team-cards li ul li:hover a,
-.team-section .container .team-cards li ul li a:focus {
+.team__section .socialMedia__list:hover,
+.team__section .socialMedia__link:focus {
     background-color: var(--accent-color);
 }
 
-.team-section .container .team-cards li ul li:hover a .icon,
-.team-section .container .team-cards li ul li a:focus .icon {
+.team__section .socialMedia__list:hover .socialMedia__icon,
+.team__section .socialMedia__link:focus .socialMedia__icon {
     fill: var(--primary-white-color);
 }
 
-/* Regular clients section */
-.clients-section .container ul {
+/*--------------- Regular clients section ---------------*/
+.clients {
     display:flex;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-end;
+    justify-content: space-between;
     
 }
 
-.clients-section .container ul li {
-    display: block;
-    width: 170px;
-    height: 81px;
+.clients .clients__list {
     border-radius: 4px;
+    height: 81px;
+    list-style: none;
+    width: 170px;
     
 }
 
-.clients-section .container ul li a {
-    display: flex;
+.clients .clients__link {
     align-items: center;
+    display: flex;
     justify-content: center;
-    width: 170px;
-    height: 81px;
-    border-radius: 4px;
+    
     border: 1px var(--icon-color) solid;
+    border-radius: 4px;
+    height: 81px;
+    width: 170px;
 }
 
-.clients-section .container ul li a .icon-client {
+.clients .clients__icon {
     width: 106px;
     height: 52px;
     fill: var(--icon-color);
 }
 
-.clients-section .container ul li:hover a,
-.clients-section .container ul li a:focus {
+.clients .clients__list:hover .clients__link,
+.clients .clients__link:focus {
     border-color: var(--accent-color);
 }
 
-.clients-section .container ul li:hover a .icon-client,
-.clients-section .container ul li a:focus .icon-client {
+.clients .clients__list:hover .clients__icon,
+.clients .clients__link:focus .clients__icon {
     fill: var(--accent-color);
 }
 
 /* Portfolio section */
-.portfolio-section .menu {
+.portfolio {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -570,7 +573,7 @@ a {
     list-style: none;
 }
 
-.portfolio-section li button {
+.portfolio li button {
     background-color: var(--background-gray);
     color: var(--primary-black-color);
     font-weight: 500;

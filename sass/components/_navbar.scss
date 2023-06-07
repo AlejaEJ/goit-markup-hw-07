@@ -11,12 +11,11 @@
     &__link {
         position: relative;
     
-        color: var(--primary-black-color);
+        color: $primary-black-color;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.4;
-        letter-spacing: 0.02em;
-        text-decoration: none;
+        letter-spacing: 0.02em; 
     }
     
     &__link--current::after {
@@ -24,7 +23,7 @@
         position: absolute;
         top: 44px;
     
-        background-color: var(--accent-color);
+        background-color: $accent-color;
         border-radius: 2px;
         content: '';
         height: 4px;

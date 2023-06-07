@@ -12,5 +12,39 @@
         
         height: 100%;
     }
+
+    .navbar {
+        align-items: center;
+        display: flex;
+        gap: 100px;
+    
+        &__list {
+            display: flex;
+            gap: 80px;
+        }
+        
+        &__link {
+            position: relative;
+        
+            color: $primary-black-color;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.4;
+            letter-spacing: 0.02em; 
+        }
+        
+        &__link--current::after {
+            left: 0;
+            position: absolute;
+            top: 44px;
+        
+            background-color: $accent-color;
+            border-radius: 2px;
+            content: '';
+            height: 4px;
+            width: 100%;  
+        }
+    }
 }
+
 

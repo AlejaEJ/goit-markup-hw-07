@@ -1,0 +1,16 @@
+.header {
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+
+    border-bottom: 1px solid var(--border-color);
+    height: 80px;
+    
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        
+        height: 100%;
+    }
+}
+

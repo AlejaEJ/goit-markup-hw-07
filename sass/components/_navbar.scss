@@ -1,0 +1,35 @@
+.navbar {
+    align-items: center;
+    display: flex;
+    gap: 100px;
+
+    &__list {
+        display: flex;
+        gap: 80px;
+    }
+    
+    &__link {
+        position: relative;
+    
+        color: var(--primary-black-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+    }
+    
+    &__link--current::after {
+        left: 0;
+        position: absolute;
+        top: 44px;
+    
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        content: '';
+        height: 4px;
+        width: 100%;  
+    }
+}
+
+

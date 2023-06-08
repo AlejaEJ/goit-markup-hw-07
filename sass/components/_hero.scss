@@ -1,0 +1,17 @@
+.hero {
+    padding: 200px $container-padding;
+    text-align: center;
+    
+    background-image: linear-gradient(rgba(47,48,58,0.7),rgba(47,48,58,0.4)), url(../Images/hero1.jpg);
+    background-size: cover;
+
+    &__title {
+        margin: 30px auto;
+    
+        color: $primary-white-color;
+        font-size: 44px;
+        font-weight: 900;
+        width: 650px;
+    }
+}
+

@@ -1,0 +1,25 @@
+.benefits {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__list {
+        width: 270px;
+    }
+    &__item {
+        padding: 25px 100px;
+    
+        background-color: $background-gray;
+        border-radius: 4px;
+    }
+    &__icon {
+        height: 70px;
+        width: 65px;
+    } 
+    &__title {
+        padding: 10px 0;
+    
+        color: $primary-black-color;
+    }
+}

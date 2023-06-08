@@ -1,71 +1,10 @@
 
 /*--------------- Header section ---------------*/
 
-.contacts {
-    display:flex;
-    gap: 80px;
-}
 
-.contacts .contacts__link {
-    align-items: center;
-    display:flex;
-    gap: 10px;
-
-    color: var(--primary-text-color);
-    font-size: 14px;
-    font-weight: 500;
-    height: 20px;
-    letter-spacing: 0.02em;
-    line-height: 1.4;
-}
-
-.contacts .contacts__icon {
-    fill: var(--primary-text-color);
-}
-
-.contacts .contacts__icon--email {
-    height: 12px;
-    width: 16px;
-}
-
-.contacts .contacts__icon--phone {
-    height: 16px;
-    width: 10px;
-}
-
-.navbar .navbar__link--current,
-.navbar .navbar__link:hover,
-.navbar .navbar__link:focus,
-.contacts .contacts__link:hover,
-.contacts .contacts__link:focus,
-.contacts .contacts__link:hover .contacts__icon,
-.contacts .contacts__link:focus .contacts__icon {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
 
 /*--------------- Modal window ---------------*/
-.backdrop {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    left: 0;
-    position: fixed;
-    top: 0;
-    
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 100%;
-    opacity: 1;
-    width: 100%;
-    
-    transition: opacity 250ms; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-}
 
 .backdrop .modal__form {
     padding: 40px;

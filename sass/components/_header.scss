@@ -12,17 +12,15 @@
         
         height: 100%;
     }
-
     .navbar {
         align-items: center;
         display: flex;
         gap: 100px;
-    
+
         &__list {
             display: flex;
             gap: 80px;
-        }
-        
+        }       
         &__link {
             position: relative;
         
@@ -31,8 +29,7 @@
             font-size: 14px;
             line-height: 1.4;
             letter-spacing: 0.02em; 
-        }
-        
+        }     
         &__link--current::after {
             left: 0;
             position: absolute;
@@ -44,6 +41,44 @@
             height: 4px;
             width: 100%;  
         }
+    }
+    .contacts {
+        display:flex;
+        gap: 80px;
+
+        &__link {
+            align-items: center;
+            display:flex;
+            gap: 10px;
+        
+            color: $primary-text-color;
+            font-size: 14px;
+            font-weight: 500;
+            height: 20px;
+            letter-spacing: 0.02em;
+            line-height: 1.4;
+        }
+        &__icon {
+            fill: $primary-text-color;
+        }
+        &__icon--email {
+            height: 12px;
+            width: 16px;
+        }
+        &__icon--phone {
+            height: 16px;
+            width: 10px;
+        }
+    }
+    .navbar__link--current,
+    .navbar__link:hover,
+    .navbar__link:focus,
+    .contacts__link:hover,
+    .contacts__link:focus,
+    .contacts__link:hover .contacts__icon,
+    .contacts__link:focus .contacts__icon {
+        color: $accent-color;
+        fill: $accent-color ;
     }
 }
 

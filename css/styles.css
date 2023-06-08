@@ -13,82 +13,8 @@
 
 
 /*--------------- Team section ---------------*/
-.team__section {
-    background-color: var(--background-gray); 
-}
 
-.team__section .team__cards {
-    align-items: flex-end;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-.team__section .team__list {
-    text-align: center;
-
-    background-color: var(--primary-white-color);
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.team__section .team__member {
-    margin: 30px 0 10px 0;
-    
-    color: var(--primary-black-color);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-.team__section .team__role {
-    font-size: 16px;
-    line-height: 1.2;
-}
-
-.socialMedia {
-    align-items: center;
-    display: flex; 
-    gap: 15px;
-    justify-content:center;
-    margin-bottom: 20px;
-    padding-top: 20px;
-}
-
-.socialMedia .socialMedia__list {
-    display:block;
-    
-    border-radius: 25px;
-    box-shadow: none;
-    height: 44px;
-    width: 44px;
-}
-
-.socialMedia .socialMedia__link {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    
-    border-radius: 25px;
-    height: 44px;
-    width: 44px;
-}
-
-.socialMedia .socialMedia__icon {
-    fill: var(--icon-color);
-    height: 20px;
-    width: 20px;
-}
-
-.socialMedia .socialMedia__list:hover,
-.socialMedia .socialMedia__link:focus {
-    background-color: var(--accent-color);
-}
-
-.socialMedia .socialMedia__list:hover .socialMedia__icon,
-.socialMedia .socialMedia__link:focus .socialMedia__icon {
-    fill: var(--primary-white-color);
-}
 
 /*--------------- Regular clients section ---------------*/
 .clients {
@@ -265,13 +191,7 @@
     line-height: 1.1;
 }
 
-.socialMedia .socialMedia__link--color {
-    background-color: rgba(255, 255, 255, 0.1);
-}
 
-.socialMedia .socialMedia__icon--color {
-    fill: var(--primary-white-color);
-}
 
 .footer .footer__form--label {
     display: block;

@@ -5,54 +5,6 @@
 
 /*--------------- Modal window ---------------*/
 
-
-.backdrop .modal__form {
-    padding: 40px;
-    position: relative;
-    z-index: 1;
-
-    border-radius: 4px;
-    background-color: var(--primary-white-color);
-    height: 581px;
-    width: 528px; 
-    
-    transition: transform ease-in  250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(0);
-    
-}
-
-.backdrop .modal__form.is-hidden {
-    transform: translateY(200px);
-}
-
-.backdrop .modal__button {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    
-    background-color: var(--primary-white-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
-    cursor: pointer;
-    height: 30px;
-    width: 30px;
-}
-    
-
-.backdrop .modal__button .modal__button--close {
-    height: 11px;
-    width: 11px;
-}
-
-.backdrop .modal__button:hover,
-.backdrop .modal__button:focus {
-    fill:var(--accent-color);
-}
-
 .backdrop .modal__title {
     text-align: center;
 

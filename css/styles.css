@@ -23,64 +23,6 @@
 
 
 /*--------------- Footer section ---------------*/
-.footer {
-    padding: 60px var(--container-padding);
 
-    background-color: var(--background-black);
-}
 
-.footer .container {
-    align-items: flex-start;
-    display: flex;
-    gap: 20px;
-}
 
-.address__link {
-    color: var(--primary-white-color);
-    font-style: normal;
-}
-
-.address__link--color {
-    color: var(--text-white-opacity);
-}
-
-.address__link:hover,
-.address__link:focus,
-.address__link--color:hover,
-.address__link--color:focus {
-    color: var(--accent-color);
-}
-
-.footer .footer__text {
-    color: var(--primary-white-color);
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.footer .footer__form--label {
-    display: block;
-    padding-top: 20px;
-}
-
-.footer .footer__form--input {
-    padding-left: 16px;
-    
-    background-color: var(--background-black);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    color: var(--primary-white-color);
-    height: 50px;
-    width: 358px;
-    outline: none;
-}
-
-.footer .footer__form--button {
-    margin-left: 12px;
-    
-    height: 50px;
-}
-
-.footer .footer__form--icon {
-    height: 24px;
-    width: 24px;
-}

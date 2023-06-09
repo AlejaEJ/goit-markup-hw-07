@@ -1,0 +1,15 @@
+.address__link {
+    color: $primary-white-color;
+    font-style: normal;
+
+    &--color {
+        color: $text-white-opacity;
+    }
+    &:hover,
+    &:focus,
+    &--color:hover,
+    &--color:focus {
+        color: $accent-color;
+    }
+}
+

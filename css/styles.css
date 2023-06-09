@@ -17,45 +17,7 @@
 
 
 /*--------------- Regular clients section ---------------*/
-.clients {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
 
-.clients .clients__list {
-    border-radius: 4px;
-    height: 81px;
-    width: 170px;
-}
-
-.clients .clients__link {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    
-    border: 1px var(--icon-color) solid;
-    border-radius: 4px;
-    height: 81px;
-    width: 170px;
-}
-
-.clients .clients__icon {
-    fill: var(--icon-color);
-    height: 52px;
-    width: 106px;
-}
-
-.clients .clients__list:hover .clients__link,
-.clients .clients__link:focus {
-    border-color: var(--accent-color);
-}
-
-.clients .clients__list:hover .clients__icon,
-.clients .clients__link:focus .clients__icon {
-    fill: var(--accent-color);
-}
 
 /*--------------- Portfolio section ---------------*/
 .portfolio__menu {
@@ -190,8 +152,6 @@
     font-weight: 700;
     line-height: 1.1;
 }
-
-
 
 .footer .footer__form--label {
     display: block;

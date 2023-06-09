@@ -1,0 +1,36 @@
+.clients {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__list {
+        border-radius: 4px;
+        height: 81px;
+        width: 170px;
+    }    
+    &__link {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        
+        border: 1px $icon-color solid;
+        border-radius: 4px;
+        height: 81px;
+        width: 170px;
+    }   
+    &__icon {
+        fill: $icon-color;
+        height: 52px;
+        width: 106px;
+    }  
+    &__list:hover &__link,
+    &__link:focus {
+        border-color: $accent-color;
+    } 
+    &__list:hover &__icon,
+    &__link:focus &__icon {
+        fill: $accent-color;
+    }
+    
+}
+

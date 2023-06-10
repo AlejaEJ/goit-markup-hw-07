@@ -4,8 +4,7 @@
     background-color: $background-black;
 
     .container {
-        align-items: flex-start;
-        display: flex;
+        @include flex(flex-start, space-between);
         gap: 20px;
     }
     &__text {

@@ -1,7 +1,6 @@
 .portfolio__cards {
-    display: flex;
+    @include flex(stretch, space-between);
     flex-wrap: wrap;
-    justify-content: space-between;
 
     .portfolio__list {
         margin-bottom: 20px;

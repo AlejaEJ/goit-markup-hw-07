@@ -1,8 +1,6 @@
 .benefits {
-    align-items: flex-start;
-    display: flex;
+    @include flex(flex-start, space-between);
     flex-wrap: wrap;
-    justify-content: space-between;
 
     &__list {
         width: 270px;

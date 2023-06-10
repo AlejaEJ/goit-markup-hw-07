@@ -1,7 +1,5 @@
 .backdrop {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    @include flex(center, center);
     left: 0;
     position: fixed;
     top: 0;
@@ -32,9 +30,7 @@
         transform: translateY(200px);
     }
     .modal__button {
-        align-items: center;
-        display: flex;
-        justify-content: center;
+        @include flex(center, center);
         position: absolute;
         right: 8px;
         top: 8px;
@@ -125,9 +121,7 @@
         }   
     }
     .modal__box {
-        align-items: center;
-        display: flex;
-        justify-content: center;
+        @include flex(center, center);
         left: 16px;
         position: absolute;
         top: 4px;

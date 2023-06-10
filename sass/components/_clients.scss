@@ -1,7 +1,6 @@
 .clients {
-    display:flex;
+    @include flex(center, space-between);
     flex-wrap: wrap;
-    justify-content: space-between;
 
     &__list {
         border-radius: 4px;
@@ -9,9 +8,7 @@
         width: 170px;
     }    
     &__link {
-        align-items: center;
-        display: flex;
-        justify-content: center;
+        @include flex(center, center);
         
         border: 1px $icon-color solid;
         border-radius: 4px;

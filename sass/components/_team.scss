@@ -2,10 +2,8 @@
     background-color: $background-gray; 
 
     .team__cards {
-        align-items: flex-end;
-        display: flex;
+        @include flex(flex-end, space-between);
         flex-wrap: wrap;
-        justify-content: space-between;
     }
     
     .team__list {

@@ -1,8 +1,6 @@
 .portfolio__menu {
-    align-items: center;
-    display: flex;
+    @include flex(center, center);
     gap: 8px;
-    justify-content: center;
     margin-bottom: 50px;
 
     .portfolio__button {

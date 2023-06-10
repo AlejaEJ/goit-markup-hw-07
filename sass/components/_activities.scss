@@ -2,10 +2,8 @@
     padding-top: 0;
 
     .activities__list {
-        align-items: center;
-        display: flex;
+        @include flex(center, space-between);
         flex-wrap: wrap;
-        justify-content: space-between;
     }
     
     .activities__item {
